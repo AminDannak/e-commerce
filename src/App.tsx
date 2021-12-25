@@ -1,11 +1,14 @@
-import React from "react";
+import React, { Suspense } from "react";
 import "./App.css";
 import HomePage from "./pages/homepage/homepage.component";
+import "./i18n";
 
 function App() {
   return (
     <div>
-      <HomePage />
+      <Suspense fallback={null}>
+        <HomePage />
+      </Suspense>
     </div>
   );
 }

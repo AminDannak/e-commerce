@@ -1,40 +1,40 @@
 interface SectionData {
   id: number;
-  title: string;
+  titleKey: string;
   imageUrl: string;
   linkUrl: string;
   size?: "large";
 }
 
-export const sections: Array<SectionData> = [
+export const getSections = (): Array<SectionData> => [
   {
     id: 1,
-    title: "hats",
+    titleKey: "hats",
     imageUrl: "https://i.ibb.co/cvpntL1/hats.png",
     linkUrl: "shop/hats",
   },
   {
     id: 2,
-    title: "jackets",
+    titleKey: "jackets",
     imageUrl: "https://i.ibb.co/px2tCc3/jackets.png",
     linkUrl: "shop/jackets",
   },
   {
     id: 3,
-    title: "sneakers",
+    titleKey: "sneakers",
     imageUrl: "https://i.ibb.co/0jqHpnp/sneakers.png",
     linkUrl: "shop/sneakers",
   },
   {
     id: 4,
-    title: "womens",
+    titleKey: "womens",
     imageUrl: "https://i.ibb.co/GCCdy8t/womens.png",
     size: "large",
     linkUrl: "shop/womens",
   },
   {
     id: 5,
-    title: "mens",
+    titleKey: "mens",
     imageUrl: "https://i.ibb.co/R70vBrQ/men.png",
     size: "large",
     linkUrl: "shop/mens",
