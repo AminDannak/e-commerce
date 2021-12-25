@@ -1,7 +1,13 @@
 import React from "react";
 import "./menu-item.styles.scss";
 
-const MenuItem = ({ title, imageUrl, size }) => {
+interface Props {
+  title: string;
+  imageUrl: string;
+  size?: "large";
+}
+
+const MenuItem = ({ title, imageUrl, size }: Props) => {
   console.log(imageUrl);
   return (
     <div

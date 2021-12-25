@@ -1,4 +1,12 @@
-export const sections = [
+interface SectionData {
+  id: number;
+  title: string;
+  imageUrl: string;
+  linkUrl: string;
+  size?: "large";
+}
+
+export const sections: Array<SectionData> = [
   {
     id: 1,
     title: "hats",
