@@ -1,17 +1,35 @@
-import React from "react";
-import "./menu-item.styles.scss";
+import React, { FC } from "react";
+import { RouteComponentProps } from "react-router";
+import { withRouter } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-interface Props {
+import "./menu-item.styles.scss";
+
+// whatever you expect in 'this.props.match.params.*'
+interface PathParamsType {}
+
+type Props = RouteComponentProps<PathParamsType> & {
   title: string;
   imageUrl: string;
+  linkUrl: string;
   size?: "large";
-}
+};
 
-const MenuItem = ({ title, imageUrl, size }: Props) => {
+const MenuItem: FC<Props> = ({
+  title,
+  imageUrl,
+  size,
+  linkUrl,
+  history,
+  match,
+}) => {
   const { t } = useTranslation();
+
   return (
-    <div className={`${size} menu-item`}>
+    <div
+      className={`${size} menu-item`}
+      onClick={() => history.push(`${match.url}${linkUrl}`)}
+    >
       <div
         className="background-image"
         style={{ backgroundImage: `url("${imageUrl}")` }}
@@ -24,4 +42,4 @@ const MenuItem = ({ title, imageUrl, size }: Props) => {
   );
 };
 
-export default MenuItem;
+export default withRouter(MenuItem);

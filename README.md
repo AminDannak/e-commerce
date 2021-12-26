@@ -10,3 +10,4 @@ This is a project based on a Udemy course, authored by Yihua Zhang (https://gith
 ## To Do:
 
 - Dark Mode
+- Not Found Pages

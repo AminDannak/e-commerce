@@ -4,12 +4,13 @@ import { useTranslation } from "react-i18next";
 import "./directory.styles.scss";
 
 import MenuItem from "../menu-item/menu-item.component";
-// import { sections as initSections } from "./directory.data";
-import { getSections } from "./directory.data";
+import { sections as sections_ } from "./directory.data";
 
 const Directory = () => {
   const { t } = useTranslation();
-  const [sections] = useState(getSections());
+
+  const [sections] = useState(sections_);
+
   return (
     <div className="directory-menu">
       {sections.map((s) => (
@@ -17,6 +18,7 @@ const Directory = () => {
           key={s.id}
           title={t(s.titleKey)}
           imageUrl={s.imageUrl}
+          linkUrl={s.linkUrl}
           size={s.size}
         />
       ))}
