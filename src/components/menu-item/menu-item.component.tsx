@@ -11,13 +11,14 @@ interface Props {
 const MenuItem = ({ title, imageUrl, size }: Props) => {
   const { t } = useTranslation();
   return (
-    <div
-      className={`${size} menu-item`}
-      style={{ backgroundImage: `url("${imageUrl}")` }}
-    >
+    <div className={`${size} menu-item`}>
+      <div
+        className="background-image"
+        style={{ backgroundImage: `url("${imageUrl}")` }}
+      />
       <div className="content">
-        <h1 className="title">{title}</h1>
-        <span className="subtitle">{t("shop_now")}</span>
+        <h1 className="title">{title.toUpperCase()}</h1>
+        <span className="subtitle">{t("shop_now").toUpperCase()}</span>
       </div>
     </div>
   );
