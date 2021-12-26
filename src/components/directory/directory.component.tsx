@@ -4,12 +4,12 @@ import { useTranslation } from "react-i18next";
 import "./directory.styles.scss";
 
 import MenuItem from "../menu-item/menu-item.component";
-import { sections as sections_ } from "./directory.data";
+import DUMMY_SECTIONS_DATA from "./directory.data";
 
 const Directory = () => {
   const { t } = useTranslation();
 
-  const [sections] = useState(sections_);
+  const [sections] = useState(DUMMY_SECTIONS_DATA);
 
   return (
     <div className="directory-menu">

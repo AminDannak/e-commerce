@@ -3,15 +3,7 @@ import { Route, Switch } from "react-router-dom";
 
 import "./App.css";
 import HomePage from "./pages/homepage/homepage.component";
-
-const HatsPage = (props) => {
-  console.log(props);
-  return (
-    <div>
-      <h1>HATS PAGE</h1>
-    </div>
-  );
-};
+import ShopPage from "./pages/shop/shop.component";
 
 function App() {
   return (
@@ -19,7 +11,7 @@ function App() {
       <Suspense fallback={null}>
         <Switch>
           <Route exact path="/" component={HomePage} />
-          <Route path="/hats" component={HatsPage} />
+          <Route path="/shop" component={ShopPage} />
           <Route component={() => <h1>Not Found</h1>} />
         </Switch>
       </Suspense>

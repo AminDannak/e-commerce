@@ -1,12 +1,6 @@
-interface SectionData {
-  id: number;
-  titleKey: string;
-  imageUrl: string;
-  linkUrl: string;
-  size?: "large";
-}
+import { DummyCategorySection } from "../../model/DummyCategorySection";
 
-export const sections: Array<SectionData> = [
+const sections: Array<DummyCategorySection> = [
   {
     id: 1,
     titleKey: "hats",
@@ -40,3 +34,5 @@ export const sections: Array<SectionData> = [
     linkUrl: "",
   },
 ];
+
+export default sections;
