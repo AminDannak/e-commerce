@@ -5,4 +5,8 @@ This is a project based on a Udemy course, authored by Yihua Zhang (https://gith
 ## Modifications I've made:
 
 - Using TypeScript
-- Multi-Language Support
+- Multi-Language Support (English and Farsi)
+
+## To Do:
+
+- Dark Mode

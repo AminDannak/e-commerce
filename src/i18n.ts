@@ -17,10 +17,6 @@ i18n
     },
   }));
 
-// i18next.changeLanguage("fa"); to test farsi
+i18n.changeLanguage("en"); // to test farsi
 
 export default i18n;
-
-// To switch the language you can use:
-// import i18next from "i18next"
-// i18next.changeLanguage('fa')
