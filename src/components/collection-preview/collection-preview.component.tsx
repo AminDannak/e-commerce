@@ -2,6 +2,7 @@ import React, { FC } from "react";
 
 import "./collection-preview.styles.scss";
 import { DummyCategory } from "../../model/DummyCategory";
+import CollectionItem from "../collection-item/collection-item.component";
 
 type Props = DummyCategory;
 
@@ -15,7 +16,7 @@ const CollectionPreview: FC<Props> = ({ title, items }) => {
         {items
           .filter((_, i) => i < PRODUCTS_PER_CATEGORY)
           .map((item) => (
-            <div key={item.id}>{item.name}</div>
+            <CollectionItem id={item.id} {...item} />
           ))}
       </div>
     </div>
