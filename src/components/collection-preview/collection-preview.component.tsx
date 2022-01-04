@@ -16,7 +16,7 @@ const CollectionPreview: FC<Props> = ({ title, items }) => {
         {items
           .filter((_, i) => i < PRODUCTS_PER_CATEGORY)
           .map((item) => (
-            <CollectionItem id={item.id} {...item} />
+            <CollectionItem {...item} />
           ))}
       </div>
     </div>
