@@ -6,10 +6,11 @@ This is a project based on a Udemy course, created by Yihua Zhang (https://githu
 
 ✨ Using TypeScript\
 ✨ Multi-Language Support (English and Farsi)\
-✨ Path Aliases\
 ✨ Replacing Class Components With Their Functional Counterparts\
 
 ## To Do:
 
 🗓 Dark Mode\
 🗓 Not Found Pages\
+🗓 Code Spliting\
+🗓 Performance Optimizations\
