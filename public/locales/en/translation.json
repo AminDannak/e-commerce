@@ -6,5 +6,10 @@
   "mens": "men's",
   "shop_now": "shop now",
   "shop": "shop",
-  "contact_us": "contact us"
+  "contact_us": "contact us",
+  "email": "email",
+  "password": "password",
+  "i_already_have_account": "i already have an account",
+  "sign_in_with_email_password": "sign in with your email and password",
+  "submit_form": "submit form"
 }

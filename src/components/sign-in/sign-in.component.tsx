@@ -1,16 +1,11 @@
-import React, { ChangeEvent, FormEvent, useState } from "react";
+import React, { FormEvent, useState } from "react";
 import "./sign-in.styles.scss";
-
-type FormData = {
-  email: {
-    value: string;
-  };
-  password: {
-    value: string;
-  };
-};
+import FormInput from "components/form-input/form-input.component";
+import { useTranslation } from "react-i18next";
 
 const SignIn = () => {
+  const { t } = useTranslation();
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -21,28 +16,27 @@ const SignIn = () => {
     setPassword("");
   };
 
-  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-    e.preventDefault();
-    const { email, password } = e.target as typeof e.target & FormData;
-    setEmail(email.value);
-    setPassword(password.value);
-  };
-
   return (
     <div className="sign-in">
-      <h2>I already have an account</h2>
-      <span>sign in with your email and password</span>
+      <h2>{t("i_already_have_account")}</h2>
+      <span>{t("sign_in_with_email_password")}</span>
       <form onSubmit={handleSubmit}>
-        <input type="email" value={email} required onChange={handleChange} />
-        <label>Email</label>
-        <input
-          type="password"
-          value={password}
+        <FormInput
           required
-          onChange={handleChange}
+          type="email"
+          value={email}
+          label={t("email")}
+          handleChange={setEmail}
+          defaultValue={email}
         />
-        <label>Password</label>
-        <input type="submit" value="Submit Form" />
+        <FormInput
+          required
+          type="password"
+          label={t("password")}
+          value={password}
+          handleChange={setPassword}
+        />
+        <input type="submit" value={`${t("submit_form")}`} />
       </form>
     </div>
   );

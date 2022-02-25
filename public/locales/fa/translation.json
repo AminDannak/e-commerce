@@ -6,5 +6,10 @@
   "mens": "مردانه",
   "shop_now": "خرید کنید",
   "shop": "فروشگاه",
-  "contact_us": "تماس با ما"
+  "contact_us": "تماس با ما",
+  "email": "ایمیل",
+  "password": "رمز عبور",
+  "i_already_have_account": "حساب کاربری دارم",
+  "sign_in_with_email_password": "ورود با ایمیل و رمز عبور",
+  "submit_form": "ثبت اطلاعات"
 }
