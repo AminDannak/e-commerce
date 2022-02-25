@@ -19,7 +19,7 @@ const Header = () => {
           {t("shop").toUpperCase()}
         </Link>
         <Link className="option" to="/contact">
-          {t("contact_us").toUpperCase()}
+          {t("contact-us").toUpperCase()}
         </Link>
       </div>
     </div>

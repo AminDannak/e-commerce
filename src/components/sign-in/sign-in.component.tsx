@@ -2,6 +2,7 @@ import React, { FormEvent, useState } from "react";
 import "./sign-in.styles.scss";
 import FormInput from "components/form-input/form-input.component";
 import { useTranslation } from "react-i18next";
+import CustomButton from "components/custom-button/custom-button.component";
 
 const SignIn = () => {
   const { t } = useTranslation();
@@ -18,8 +19,8 @@ const SignIn = () => {
 
   return (
     <div className="sign-in">
-      <h2>{t("i_already_have_account")}</h2>
-      <span>{t("sign_in_with_email_password")}</span>
+      <h2>{t("i-already-have-account")}</h2>
+      <span>{t("sign-in-with-email-password")}</span>
       <form onSubmit={handleSubmit}>
         <FormInput
           required
@@ -36,7 +37,7 @@ const SignIn = () => {
           value={password}
           handleChange={setPassword}
         />
-        <input type="submit" value={`${t("submit_form")}`} />
+        <CustomButton type="submit">{t("sign-in")}</CustomButton>
       </form>
     </div>
   );

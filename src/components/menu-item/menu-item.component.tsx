@@ -36,7 +36,7 @@ const MenuItem: FC<Props> = ({
       />
       <div className="content">
         <h1 className="title">{title.toUpperCase()}</h1>
-        <span className="subtitle">{t("shop_now").toUpperCase()}</span>
+        <span className="subtitle">{t("shop-now").toUpperCase()}</span>
       </div>
     </div>
   );

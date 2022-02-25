@@ -4,12 +4,13 @@
   "sneakers": "کفش‌ها",
   "womens": "زنانه",
   "mens": "مردانه",
-  "shop_now": "خرید کنید",
+  "shop-now": "خرید کنید",
   "shop": "فروشگاه",
-  "contact_us": "تماس با ما",
+  "contact-us": "تماس با ما",
   "email": "ایمیل",
   "password": "رمز عبور",
-  "i_already_have_account": "حساب کاربری دارم",
-  "sign_in_with_email_password": "ورود با ایمیل و رمز عبور",
-  "submit_form": "ثبت اطلاعات"
+  "i-already-have-account": "حساب کاربری دارم",
+  "sign-in-with-email-password": "ورود با ایمیل و رمز عبور",
+  "submit-form": "ثبت اطلاعات",
+  "sign-in": "ورود"
 }
